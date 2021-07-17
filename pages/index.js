@@ -1,7 +1,5 @@
 import React from 'react'
 import Homepage from '../src/components/Homepage'
-import Nav from '../src/components/Nav'
-import Footer from '../src/components/Footer'
 
 const Index = (props) => {
   return (

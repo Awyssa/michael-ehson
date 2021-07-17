@@ -1,14 +1,17 @@
 import React from 'react'
-import '../styles/globals.css'
 import Nav from '../src/components/Nav'
 import Footer from '../src/components/Footer'
+
+import { ChakraProvider } from '@chakra-ui/react'
 
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
-      <Nav />
-      <Component {...pageProps} />
-      <Footer />
+      <ChakraProvider>
+        <Nav />
+        <Component {...pageProps} />
+        <Footer />
+      </ChakraProvider>
     </>
   )
 }
