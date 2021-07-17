@@ -1,4 +1,11 @@
 // src/data/data.js
-const notes = []
+const comments = new Array(5)
+  .fill(1)
+  .map((_, i) => {
+    return {
+      id: i,
+      comment: `Comment ${i}`
+    }
+  })
 
-module.exports = notes
+module.exports = comments
