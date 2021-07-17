@@ -5,11 +5,5 @@ const handler = nc()
   .get((req, res) => {
     res.send('Hello world')
   })
-  .post((req, res) => {
-    res.json({ hello: 'world' })
-  })
-  .put(async (req, res) => {
-    res.end('hello')
-  })
   
 export default handler;

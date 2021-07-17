@@ -1,14 +1,14 @@
 import React from 'react'
 
-const About = (props) => {
+const Nav = (props) => {
 
   console.log(props)
 
   return (
     <div>
-    <p>Michael hendo about page </p>
+      <p>NAV BAR</p>
     </div>
   )
 }
 
-export default About
+export default Nav

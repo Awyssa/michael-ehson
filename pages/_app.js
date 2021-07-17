@@ -1,7 +1,16 @@
+import React from 'react'
 import '../styles/globals.css'
+import Nav from '../src/components/Nav'
+import Footer from '../src/components/Footer'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <>
+      <Nav />
+      <Component {...pageProps} />
+      <Footer />
+    </>
+  )
 }
 
 export default MyApp

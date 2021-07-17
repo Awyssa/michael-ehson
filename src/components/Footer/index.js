@@ -1,14 +1,15 @@
 import React from 'react'
 
-const About = (props) => {
+const Footer = (props) => {
 
   console.log(props)
 
   return (
     <div>
-    <p>Michael hendo about page </p>
+      <p>Footer</p>
     </div>
   )
+
 }
 
-export default About
+export default Footer
