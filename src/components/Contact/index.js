@@ -6,7 +6,7 @@ const Contact = (props) => {
 
   return (
     <div>
-    <p>Michael hendo contact page </p>
+      <p>Fun fact, dont contact me...</p>
     </div>
   )
 }

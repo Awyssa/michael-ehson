@@ -6,7 +6,7 @@ const About = (props) => {
 
   return (
     <div>
-    <p>Michael hendo about page </p>
+      <p>Some interesting info about me...</p>
     </div>
   )
 }
