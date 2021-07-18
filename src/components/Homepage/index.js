@@ -9,7 +9,7 @@ const Homepage = (props) => {
 
   return (
     <Box alignContent="center" justifyContent="center" align="center">
-      <Box pt="20" boxSize="400">
+      <Box py="10" width="500px" height="400px">
         <Image src={img} alt="" />
       </Box>
       <Text>{name}</Text>

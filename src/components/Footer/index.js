@@ -18,16 +18,21 @@ const Footer = () => {
     >
 
       <Box>
-        <Text> &copy; Michael Henderson, 2021</Text>
+        <Text> Michael Henderson &copy; 2021</Text>
       </Box>
 
       <Box display="flex" justifyContent="center">
-        <Link cursor="pointer" href="https://github.com/Awyssa">
-          <Text px="3">GitHub</Text>
-        </Link>
+        <Text 
+        as="a"
+        href="https://github.com/Awyssa" 
+        cursor="pointer" 
+        px="3"
+        >
+        GitHub\
+        </Text>
         |
-        <Link cursor="pointer" href="https://www.linkedin.com/in/mhenderson24/">
-          <Text px="3">LinkedIn</Text>
+        <Link href="https://www.linkedin.com/in/mhenderson24/">
+          <Text cursor="pointer" px="3">LinkedIn</Text>
         </Link>
         |
         <Link href="https://medium.com/@Awyssa">
