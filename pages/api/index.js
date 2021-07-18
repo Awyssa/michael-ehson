@@ -1,4 +1,4 @@
-import nc from 'next-connect';
+import nc from 'next-connect'
 
 const handler = nc()
   // express like routing for methods
@@ -6,4 +6,4 @@ const handler = nc()
     res.send('Hello world')
   })
   
-export default handler;
+export default handler

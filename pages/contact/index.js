@@ -1,6 +1,7 @@
+import React from 'react'
 const Index = () => {
   return <p>contact page</p>
-};
+}
 
 export async function getStaticProps() {
   
@@ -13,7 +14,4 @@ export async function getStaticProps() {
   return { props: data }
 }
 
-export default Index;
-
-
-
+export default Index

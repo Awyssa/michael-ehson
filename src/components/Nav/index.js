@@ -12,15 +12,17 @@ const Nav = () => {
         </Link>
       </Box>
 
-      <Box display="flex" alignItems="center" justifyContent="space-between">
+      <Box color="white" display="flex" alignItems="center" justifyContent="space-between">
         <Link href="/">
-          <Text as="a" px="5" color="white">Home</Text>
+          <Text cursor="pointer" px="5">Home</Text>
         </Link>
+        /
         <Link href="/about">
-          <Text as="a" px="5" color="white">About</Text>
+          <Text cursor="pointer" px="5">About</Text>
         </Link>
+        /
         <Link href="/contact">
-          <Text as="a" px="5" color="white">Contact</Text>
+          <Text cursor="pointer" px="5">Contact</Text>
         </Link>
       </Box>
     </Box>
