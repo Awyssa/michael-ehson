@@ -5,14 +5,20 @@ import Link from 'next/link'
 const Nav = () => {
 
   return (
-    <Box p="20px" display="flex" justifyContent="space-between" width="100%" bg="black">
+    <Box 
+      p="20px" 
+      display="flex" 
+      justifyContent="space-between" 
+      width="100%" bg="black" 
+      color="white"
+    >
       <Box>
         <Link href="/">
-          <Text px="5" color="white" fontWeight="bold" >Michael Henderson</Text>
+          <Text px="5"fontWeight="bold" >Michael Henderson</Text>
         </Link>
       </Box>
 
-      <Box color="white" display="flex" alignItems="center" justifyContent="space-between">
+      <Box display="flex" alignItems="center" justifyContent="space-between">
         <Link href="/">
           <Text cursor="pointer" px="5">Home</Text>
         </Link>
