@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
+import About from "../../src/components/About";
 
-const Index = () => {
-  return <p>About page</p>
-}
+const Index = () =>
+{
+	return (
+		<About />
+	);
+};
 
-export default Index
+export default Index;

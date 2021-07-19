@@ -1,14 +1,15 @@
-import React from 'react'
-import { Nav, Footer } from '@components'
+import React from "react";
+import { Nav, Footer } from "@components";
 
-const Layout = ({ children }) => {
-  return (
-    <>
-      <Nav  />
-      {children}
-      <Footer />
-    </>
-  )
-}
+const Layout = ({ children }) =>
+{
+	return (
+		<>
+			<Nav  />
+			{children}
+			<Footer />
+		</>
+	);
+};
 
-export default Layout
+export default Layout;
