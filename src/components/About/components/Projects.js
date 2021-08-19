@@ -71,7 +71,7 @@ const ProjectsSection = () =>
 				return <Box key={index}>
 					<Heading pb={4} fontSize="24px">{project.title}</Heading>
 					<Box display="flex">
-						<Image height="300px" width="350px" src={project.image} alt={project.title} />
+						<Image objectFit="contain" height="300px" width="350px" src={project.image} alt={project.title} />
 						<Box maxWidth="800px" px={4}>
 							{project.discription}
 							<Box height="12rem" display="flex" alignItems="flex-end">
