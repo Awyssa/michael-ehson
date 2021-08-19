@@ -1,15 +1,19 @@
 import React from "react";
-import { Nav, Footer } from "@components";
+import { Nav } from "../../components/Nav";
+import { Footer } from "../../components/Footer";
+import { Box } from "@chakra-ui/react";
 
-const Layout = ({ children }) =>
+const DefaultLayout = ({ children }) =>
 {
 	return (
 		<>
-			<Nav  />
-			{children}
-			<Footer />
+			<Box bg="#000000">
+				<Nav  />
+				{children}
+				<Footer />
+			</Box>
 		</>
 	);
 };
 
-export default Layout;
+export default DefaultLayout;

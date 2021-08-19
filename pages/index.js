@@ -13,8 +13,9 @@ export async function getStaticProps()
 
 	const data = {
     name: "Michael Henderson",
-    occupation: "Software Engineer",
-    age: "old"
+    occupation: "Software Engineer / Full Stack Developer",
+    age: "old",
+		location: "London, UK"
 	};
 
 	return { props: data };
