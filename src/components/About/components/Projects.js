@@ -31,7 +31,7 @@ const ProjectsSection = () =>
 			discription: <>
 				<Text>Second project at General Assembly.</Text>
 				<Text>An app to get all the best jokes on the internet.</Text>
-				<Text>Pair project, build over 2 days using React.</Text>
+				<Text>Pair project, build over 2 days using React</Text>
 				<Text>First time using React and working with an API.</Text>
 			</>,
 			github: "https://github.com/Awyssa/SEI-Project-2",
