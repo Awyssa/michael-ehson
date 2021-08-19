@@ -1,8 +1,10 @@
 import React from "react";
-import Nav from "../src/components/Nav";
-import Footer from "../src/components/Footer";
 import Head from "next/head";
 import { ChakraProvider } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
+
+import Nav from "../src/components/Nav";
+import Footer from "../src/components/Footer";
 
 const MyApp = ({ Component, pageProps }) =>
 {
@@ -13,7 +15,9 @@ const MyApp = ({ Component, pageProps }) =>
 			</Head>
 			<ChakraProvider>
 				<Nav />
-				<Component {...pageProps} />
+				<Box mt="7rem">
+					<Component {...pageProps} />
+				</Box>
 				<Footer />
 			</ChakraProvider>
 		</>

@@ -7,20 +7,24 @@ const Nav = () =>
 
 	return (
 		<Box
-			p="25px"
 			display="flex"
 			justifyContent="space-between"
 			width="100%"
 			bg="black"
 			color="white"
+			position="fixed"
+			top="0"
+			py={8}
+			align="center"
+			zIndex="9999"
 		>
-			<Box>
+			<Box pl={12}>
 				<Link href="/">
-					<Text px="5"fontWeight="bold" >Michael Henderson</Text>
+					<Text cursor="pointer" fontWeight="bold" >Michael Henderson</Text>
 				</Link>
 			</Box>
 
-			<Box display="flex" alignItems="center" justifyContent="space-between">
+			<Box pr={12} display="flex" alignItems="center" justifyContent="space-between">
 				<Link href="/">
 					<Text cursor="pointer" px="2">Home</Text>
 				</Link>
