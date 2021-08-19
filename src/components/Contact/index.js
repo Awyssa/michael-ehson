@@ -13,13 +13,12 @@ const Contact = () =>
 			height="100vh"
 		>
 			<Box display="flex" flexDirection="column">
-				<Heading>Contact</Heading>
+				<Heading 	pb={8}>Contact</Heading>
 				<Text
 					as="a"
 					target="_blank"
 					href="mailto:michael.ehson@gmail.com"
 					cursor="pointer"
-					py="3"
 				>
 				Email: michael.ehson@gmail.com
 				</Text>
@@ -28,7 +27,7 @@ const Contact = () =>
 					target="_blank"
 					href="https://github.com/Awyssa"
 					cursor="pointer"
-					py="3"
+					py={4}
 				>
 				Github: Awyssa
 				</Text>
@@ -37,7 +36,6 @@ const Contact = () =>
 					target="_blank"
 					href="https://www.linkedin.com/in/mhenderson24/"
 					cursor="pointer"
-					py="3"
 				>
 				LinkedIn: Michael Henderson
 				</Text>
