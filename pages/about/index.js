@@ -9,17 +9,4 @@ const Index = () =>
 	);
 };
 
-// export async function getStaticProps()
-// {
-
-// 	const data = {
-//     name: "Michael Henderson",
-//     occupation: "Software Engineer",
-//     age: "old",
-// 		myImage: photo
-// 	};
-
-// 	return { props: data };
-// }
-
 export default Index;

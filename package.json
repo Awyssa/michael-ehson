@@ -6,13 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "reyarn": "rm -rf node_modules yarn.lock && yarn"
+    "lint": "next lint"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.4.2",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
+    "eslint": "^7.32.0",
     "framer-motion": "3.10.6",
     "next": "11.0.1",
     "next-connect": "^0.10.1",
@@ -23,12 +23,6 @@
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
-    "eslint": "^7.30.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-next": "11.0.1",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-config-next": "^11.1.0"
   }
 }
