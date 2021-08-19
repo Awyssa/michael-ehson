@@ -1,11 +1,11 @@
 import React from "react";
-import { Box, Text, Heading, SimpleGrid, Divider } from "@chakra-ui/react";
+import { Box, Text, Heading, Divider } from "@chakra-ui/react";
 import ProjectsSection from "./components/Projects";
 import SkillsSection from "./components/Skills";
 import myPicture from "../../../public/images/pictures/2.png";
 import Image from "next/image";
 
-const About = (props) =>
+const About = () =>
 {
 
 	return (

@@ -7,7 +7,7 @@ import django from "../../../../public/images/skills/django.png";
 import express from "../../../../public/images/skills/express.png";
 import javascript from "../../../../public/images/skills/javascript.png";
 import knex from "../../../../public/images/skills/knex.png";
-import koa from "../../../../public/images/skills/koa.png";
+import koa from "../../../../public/images/skills/Koa.png";
 import mongodb from "../../../../public/images/skills/mongodb.png";
 import nextjs from "../../../../public/images/skills/nextjs.png";
 import nodejs from "../../../../public/images/skills/nodejs.png";
