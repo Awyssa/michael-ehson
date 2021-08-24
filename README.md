@@ -1,3 +1,3 @@
 Personal website for Michael Henderson.
 
-URL: www.ehson.co.uk
+www.m-henderson.com
