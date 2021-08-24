@@ -2,16 +2,15 @@
 import React from "react";
 import { Heading, Box, Text, Divider } from "@chakra-ui/react";
 import Image from "next/image";
-import github from "../../../../public/images/icons/github.svg";
-import linkIcon from "../../../../public/images/icons/link-icon.svg";
-import minesweeperImage from "../../../../public/images/projects/minesweeper.png";
-import jokeImage from "../../../../public/images/projects/joke-api.png";
-import festivalistImage from "../../../../public/images/projects/festivalist.png";
-import cornhubImage from "../../../../public/images/projects/cornhub.png";
+import github from "../../../public/images/icons/github.svg";
+import linkIcon from "../../../public/images/icons/link-icon.svg";
+import minesweeperImage from "../../../public/images/projects/minesweeper.png";
+import jokeImage from "../../../public/images/projects/joke-api.png";
+import festivalistImage from "../../../public/images/projects/festivalist.png";
+import cornhubImage from "../../../public/images/projects/cornhub.png";
 
 const ProjectsSection = () =>
 {
-
 	const projects = [
 		{
 			title: "Minesweeper",
@@ -64,31 +63,36 @@ const ProjectsSection = () =>
 	];
 
 	return <>
-		<Heading my={8}>Projects</Heading>
-		<Box>
-			{projects.map((project, index) =>
-			{
-				return <Box key={index}>
-					<Heading pb={4} fontSize="24px">{project.title}</Heading>
-					<Box display="flex">
-						<Image objectFit="contain" height="300px" width="350px" src={project.image} alt={project.title} />
-						<Box maxWidth="800px" px={4}>
-							{project.discription}
-							<Box height="12rem" display="flex" alignItems="flex-end">
-								<Box as="a" href={project.url} target="_blank" display="flex" alignItems="center">
-									<Image src={linkIcon} alt="Link icon" />
-									<Text pl={2}>Link to project</Text>
-								</Box>
-								<Box pl={6} as="a" href={project.github} target="_blank" display="flex" alignItems="center">
-									<Image src={github} alt="Github Logo" />
-									<Text pl={2} >Github Link</Text>
+		<Box
+			px={12}
+			width="100%"
+		>
+			<Heading mt={8} mb={12}>Projects</Heading>
+			<Box>
+				{projects.map((project, index) =>
+				{
+					return <Box key={index}>
+						<Heading pb={4} fontSize="24px">{project.title}</Heading>
+						<Box display="flex">
+							<Image height="300px" width="350px" minWidth="350px" src={project.image} alt={project.title} />
+							<Box ml={4} maxWidth="800px">
+								{project.discription}
+								<Box mt={6} display="flex" >
+									<Box as="a" href={project.url} target="_blank" display="flex" alignItems="center">
+										<Image src={linkIcon} alt="Link icon" />
+										<Text pl={2}>Link to project</Text>
+									</Box>
+									<Box pl={6} as="a" href={project.github} target="_blank" display="flex" alignItems="center">
+										<Image src={github} alt="Github Logo" />
+										<Text pl={2} >Github Link</Text>
+									</Box>
 								</Box>
 							</Box>
 						</Box>
-					</Box>
-					{index != projects.length - 1 ? <Divider my={12}/> : <Box pb={12} />}
-				</Box>;
-			})}
+						{index != projects.length - 1 ? <Divider my={10}/> : <Box pb={12} />}
+					</Box>;
+				})}
+			</Box>
 		</Box>
 	</>;
 };

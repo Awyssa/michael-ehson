@@ -10,7 +10,7 @@ const Contact = () =>
 			px={12}
 			width="100%"
 			display="flex"
-			height="100vh"
+			height="60vh"
 		>
 			<Box display="flex" flexDirection="column">
 				<Heading 	pb={8}>Contact</Heading>

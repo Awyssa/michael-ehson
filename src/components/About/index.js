@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Text, Heading, Divider } from "@chakra-ui/react";
-import ProjectsSection from "./components/Projects";
+import ProjectsSection from "../Projects";
 import SkillsSection from "./components/Skills";
 import myPicture from "../../../public/images/pictures/2.png";
 import Image from "next/image";
@@ -32,14 +32,8 @@ const About = () =>
 						</Text>
 					</Box>
 				</Box>
-
 				<Divider my={12} />
-
 				<SkillsSection />
-
-				<Divider my={12} />
-
-				<ProjectsSection />
 			</Box>
 		</Box>
 	);

@@ -32,7 +32,11 @@ const Nav = () =>
 				<Link href="/about">
 					<Text cursor="pointer" px="2">About</Text>
 				</Link>
-        /
+				/
+				<Link href="/projects">
+					<Text cursor="pointer" px="2">Projects</Text>
+				</Link>
+				/
 				<Link href="/contact">
 					<Text cursor="pointer" px="2">Contact</Text>
 				</Link>
