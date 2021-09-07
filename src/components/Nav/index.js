@@ -16,7 +16,7 @@ const Nav = () =>
 			top="0"
 			py={8}
 			align="center"
-			zIndex="9999"
+			zIndex={99}
 		>
 			<Box pl={12}>
 				<Link href="/">
@@ -32,7 +32,11 @@ const Nav = () =>
 				<Link href="/about">
 					<Text cursor="pointer" px="2">About</Text>
 				</Link>
-        /
+				/
+				<Link href="/projects">
+					<Text cursor="pointer" px="2">Projects</Text>
+				</Link>
+				/
 				<Link href="/contact">
 					<Text cursor="pointer" px="2">Contact</Text>
 				</Link>
