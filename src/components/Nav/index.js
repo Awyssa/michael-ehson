@@ -16,7 +16,7 @@ const Nav = () =>
 			top="0"
 			py={8}
 			align="center"
-			zIndex="9999"
+			zIndex={99}
 		>
 			<Box pl={12}>
 				<Link href="/">
