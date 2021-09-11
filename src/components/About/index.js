@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Text, Heading, Divider } from "@chakra-ui/react";
-import ProjectsSection from "../Projects";
 import SkillsSection from "./components/Skills";
 import myPicture from "../../../public/images/pictures/2.png";
 import Image from "next/image";
@@ -17,8 +16,8 @@ const About = () =>
 			justifyContent="center"
 		>
 			<Box maxWidth="1200px">
-				<Box display="flex">
-					<Box minWidth={100} minHeight={100}>
+				<Box display="flex" flexDirection={{base: "column", md: "row"}}>
+					<Box minWidth={300} minHeight={300} display="flex" justifyContent="center">
 						<Image pt={2} width={300} height={300} objectFit="contain" src={myPicture} alt="Michael Henderson" />
 					</Box>
 					<Box maxWidth="900px" px={8}>

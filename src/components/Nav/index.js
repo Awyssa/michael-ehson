@@ -8,23 +8,25 @@ const Nav = () =>
 	return (
 		<Box
 			display="flex"
+			flexDir={{base: "column", sm: "row"}}
 			justifyContent="space-between"
 			width="100%"
 			bg="black"
 			color="white"
-			position="fixed"
 			top="0"
 			py={8}
+			mb={10}
 			align="center"
 			zIndex={99}
+			px={8}
 		>
-			<Box pl={12}>
+			<Box>
 				<Link href="/">
 					<Text cursor="pointer" fontWeight="bold" >Michael Henderson</Text>
 				</Link>
 			</Box>
 
-			<Box pr={12} display="flex" alignItems="center" justifyContent="space-between">
+			<Box display="flex" alignItems="center" justifyContent="center">
 				<Link href="/">
 					<Text cursor="pointer" px="2">Home</Text>
 				</Link>

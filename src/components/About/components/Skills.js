@@ -15,20 +15,40 @@ import python from "../../../../public/images/skills/python.png";
 import rails from "../../../../public/images/skills/rails.png";
 import react from "../../../../public/images/skills/react.png";
 import ruby from "../../../../public/images/skills/ruby.png";
-import sql from "../../../../public/images/skills/sql.jpg";
+import mySql from "../../../../public/images/skills/mySql.png";
+import postgreSql from "../../../../public/images/skills/postgreSql.svg";
 
 const SkillsSection = () =>
 {
-
-	const skills = [javascript, react, nextjs, nodejs, sql, express, koa, mongodb, bookshelf, knex, python, django, ruby, rails, ];
+	const skills = [
+		{ name: "JavaScript", image: javascript, url: null },
+		{ name: "React.js", image: react, url: "https://reactjs.org/" },
+		{ name: "Next.js", image: nextjs, url: "https://nextjs.org/" },
+		{ name: "Node.js", image: nodejs, url: "https://nodejs.org/en/" },
+		{ name: "MySQL", image: mySql, url: "https://www.mysql.com/" },
+		{ name: "PostgreSql", image: postgreSql, url: "https://www.postgresql.org/" },
+		{ name: "Express", image: express, url: "https://expressjs.com/" },
+		{ name: "Koa", image: koa, url: "https://koajs.com/" },
+		{ name: "MongoDB", image: mongodb, url: "https://www.mongodb.com/" },
+		{ name: "Bookshelf.js", image: bookshelf, url: "https://bookshelfjs.org/" },
+		{ name: "Knex", image: knex, url: "https://knexjs.org/" },
+		{ name: "Python", image: python, url: "https://www.python.org/" },
+		{ name: "Django", image: django, url: "https://www.djangoproject.com/" },
+		{ name: "Ruby", image: ruby, url: "https://www.ruby-lang.org/en/" },
+		{ name: "Rails", image: rails, url: "https://rubyonrails.org/" }
+	];
 
 	return <>
 		<Box>
 			<Heading my={12}>Skills</Heading>
-			<SimpleGrid columns={4} spacing={10}>
+			<SimpleGrid columns={{base: 2, md: 4}} spacing={10}>
 				{skills.map((skill, index) =>
 				{
-					return <Image key={index} width={200} height={120} objectFit="contain" src={skill} alt=""/>;
+					return (
+						<Box key={index} as="a" href={skill.url} target="_blank" textAlign="center">
+							<Image width={200} height={120} objectFit="contain" src={skill.image} alt=""/>
+						</Box>
+					);
 				})}
 			</SimpleGrid>
 			<Text fontSize="20px" mt={12}>and a few more...</Text>

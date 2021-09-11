@@ -23,18 +23,18 @@ const MyApp = ({ Component, pageProps }) =>
 				<meta property="og:title" content="Michael Henderson" />
 				<meta property="og:description" content="Michael Henderson, Software Engineer / Full Stack Developer" />
 				<meta property="og:type" content="website" />
-				<meta property="og:site_name" content="Michael Henderson, Full Stack Developer" />
+				<meta property="og:site_name" content="Michael Henderson, Software Engineer / Full Stack Developer" />
 				<meta property="og:image" content="https://res.cloudinary.com/cornhub/image/upload/v1629756211/picture1.jpg" />
 				<meta property="og:image:alt" content="Michael Henderson" />
 				<meta property="og:image:width" content="1500" />
 				<meta property="og:image:height" content="1000" />
 			</Head>
 			<ChakraProvider>
-				<Nav />
-				<Box mt="7rem">
+				<Box minWidth="300px">
+					<Nav />
 					<Component {...pageProps} />
+					<Footer />
 				</Box>
-				<Footer />
 			</ChakraProvider>
 		</>
 	);
