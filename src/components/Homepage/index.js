@@ -9,8 +9,8 @@ const Homepage = (props) =>
 	const { name, occupation, location } = props;
 
 	return (
-		<Box height="100vh" alignContent="center" justifyContent="center" align="center">
-			<Image py={4} width={600} height={400} src={myPicture} alt="" />
+		<Box alignContent="center" justifyContent="center" align="center" height="60vh">
+			<Image width={600} height={400} src={myPicture} alt="Michael Henderson" />
 			<Text>{name}</Text>
 			<Text>{occupation}</Text>
 			<Text>{location}</Text>
