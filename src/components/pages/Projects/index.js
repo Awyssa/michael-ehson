@@ -2,12 +2,12 @@
 import React from "react";
 import { Heading, Box, Text, Divider } from "@chakra-ui/react";
 import Image from "next/image";
-import github from "../../../public/images/icons/github.svg";
-import linkIcon from "../../../public/images/icons/link-icon.svg";
-import minesweeperImage from "../../../public/images/projects/minesweeper.png";
-import jokeImage from "../../../public/images/projects/joke-api.png";
-import festivalistImage from "../../../public/images/projects/festivalist.png";
-import cornhubImage from "../../../public/images/projects/cornhub.png";
+import github from "../../../../public/images/icons/github.svg";
+import linkIcon from "../../../../public/images/icons/link-icon.svg";
+import minesweeperImage from "../../../../public/images/projects/minesweeper.png";
+import jokeImage from "../../../../public/images/projects/joke-api.png";
+import festivalistImage from "../../../../public/images/projects/festivalist.png";
+import cornhubImage from "../../../../public/images/projects/cornhub.png";
 
 const ProjectsSection = () =>
 {
@@ -63,15 +63,17 @@ const ProjectsSection = () =>
 			px={12}
 			width="100%"
 		>
-			<Heading >Projects</Heading>
+			<Heading>Projects</Heading>
 			<Box>
 				{projects.map((project, index) =>
 				{
 					return <Box key={index} >
 						<Heading pb={4} fontSize="24px">{project.title}</Heading>
 						<Box display="flex" flexDirection={{base: "column", md: "row"}}>
-							<Image height="300px" width="350px" src={project.image} alt={project.title} />
-							<Box ml={4} pt={{base: 2, md: null}}>
+							<Box maxWidth="300px">
+								<Image height="300px" width="350px" src={project.image} alt={project.title} />
+							</Box>
+							<Box ml={{base: 0, md: 4}} pt={{base: 2, md: null}}>
 								{project.discription}
 								<Box mt={6} display="flex" >
 									{project.url && <Box as="a" href={project.url} target="_blank" display="flex" alignItems="center">

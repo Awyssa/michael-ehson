@@ -1,5 +1,5 @@
 import React from "react";
-import About from "../../src/components/About";
+import About from "../../src/components/pages/About";
 
 const Index = () =>
 {

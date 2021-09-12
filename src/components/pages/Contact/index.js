@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import { Box, Text, Heading } from "@chakra-ui/react";
-import emailIcon from "../../../public/images/icons/email.svg";
-import githubIcon from "../../../public/images/icons/github.svg";
-import linkedinIcon from "../../../public/images/icons/linkedin.svg";
+import emailIcon from "../../../../public/images/icons/email.svg";
+import githubIcon from "../../../../public/images/icons/github.svg";
+import linkedinIcon from "../../../../public/images/icons/linkedin.svg";
 
 const Contact = () =>
 {
@@ -34,7 +34,6 @@ const Contact = () =>
 			px={12}
 			width="100%"
 			display="flex"
-			height="60vh"
 		>
 			<Box display="flex" flexDirection="column" >
 				<Heading 	pb={8}>Contact</Heading>
