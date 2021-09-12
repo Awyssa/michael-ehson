@@ -16,7 +16,9 @@ const Custom404 = () =>
 				<Image w="400px" h="350px" src="https://i.giphy.com/media/l3vRfhFD8hJCiP0uQ/giphy.webp" alt="pumkin dance" />
 			</Box>
 			<Link href="/">
-				<Text cursor="pointer" fontSize={18}>Or... Click here to go back</Text>
+				<a>
+					<Text cursor="pointer" fontSize={18}>Or... Click here to go back</Text>
+				</a>
 			</Link>
 		</Box>
 	);
