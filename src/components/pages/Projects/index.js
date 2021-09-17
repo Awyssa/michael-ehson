@@ -60,11 +60,14 @@ const ProjectsSection = () =>
 
 	return <>
 		<Box
-			px={12}
 			width="100%"
+			display="flex"
+			alignItems="center"
+			justifyContent="center"
+			px={12}
 		>
-			<Heading>Projects</Heading>
-			<Box>
+			<Box maxWidth="1200px">
+				<Heading pb={2}>Projects</Heading>
 				{projects.map((project, index) =>
 				{
 					return <Box key={index} >

@@ -31,11 +31,11 @@ const Contact = () =>
 
 	return (
 		<Box
-			px={12}
 			width="100%"
 			display="flex"
+			px={12}
 		>
-			<Box display="flex" flexDirection="column" >
+			<Box maxWidth="1200px">
 				<Heading 	pb={8}>Contact</Heading>
 				{contactMethod.map((contact, index) =>
 				{
