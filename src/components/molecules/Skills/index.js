@@ -5,7 +5,6 @@ import bookshelf from "../../../../public/images/skills/bookshelf.png";
 import django from "../../../../public/images/skills/django.png";
 import express from "../../../../public/images/skills/express.png";
 import javascript from "../../../../public/images/skills/javascript.png";
-import knex from "../../../../public/images/skills/knex.png";
 import koa from "../../../../public/images/skills/Koa.png";
 import apollo from "../../../../public/images/skills/apollo.png";
 import graphQl from "../../../../public/images/skills/graphql.png";
