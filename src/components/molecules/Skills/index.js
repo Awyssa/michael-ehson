@@ -34,7 +34,6 @@ const SkillsSection = () =>
 		{ name: "Express", image: express, url: "https://expressjs.com/" },
 		{ name: "Koa", image: koa, url: "https://koajs.com/" },
 		{ name: "Bookshelf.js", image: bookshelf, url: "https://bookshelfjs.org/" },
-		{ name: "Knex.js", image: knex, url: "https://knexjs.org/" },
 		{ name: "Python", image: python, url: "https://www.python.org/" },
 		{ name: "Django", image: django, url: "https://www.djangoproject.com/" },
 		{ name: "Ruby", image: ruby, url: "https://www.ruby-lang.org/en/" },
