@@ -43,7 +43,7 @@ const ProjectsSection = () =>
 				<Text>Group project of four people, built over one week using React, NodeJS, Express, and MongoDB.</Text>
 			</>,
 			github: "https://github.com/Awyssa/sei-project3",
-			url: null
+			url: "https://festivalist.netlify.app/"
 		},
 		{
 			title: "CornHub",
