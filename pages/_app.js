@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import { ChakraProvider } from "@chakra-ui/react";
 import Layout from "../src/components/layouts/Default";
+import { DarkMode } from "../src/components/store/DarkMode";
 
 const MyApp = ({ Component, pageProps }) =>
 {
+	const [darkMode, setDarkMode] = useState(false);
+
 	return (
 		<>
 			<Head>
@@ -35,9 +38,11 @@ const MyApp = ({ Component, pageProps }) =>
 				</script>
 			</Head>
 			<ChakraProvider>
-				<Layout>
-					<Component {...pageProps} />
-				</Layout>
+				<DarkMode.Provider value={{darkMode, setDarkMode}}>
+					<Layout>
+						<Component {...pageProps}/>
+					</Layout>
+				</DarkMode.Provider>
 			</ChakraProvider>
 		</>
 	);

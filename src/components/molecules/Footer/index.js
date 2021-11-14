@@ -3,7 +3,6 @@ import { Box, Text, Divider } from "@chakra-ui/react";
 
 const Footer = () =>
 {
-
 	const links = [
 		{title: "GitHub", url: "https://github.com/Awyssa"},
 		{title: "LinkedIn", url: "https://www.linkedin.com/in/mhenderson24/"},
@@ -13,35 +12,33 @@ const Footer = () =>
 	return (
 		<Box
 			width="100%"
-			py={8}
+			py="8"
 			display="flex"
 			align="center"
 			flexDirection="column"
 		>
 			<Box>
-				<Box>
-					<Divider my={8} width="80%"/>
-					<Text> Michael Henderson &copy; 2021</Text>
-				</Box>
-				<Box display="flex" justifyContent="center">
-					{links.map((link, index) =>
-						<>
-							<Text
-								key={index}
-								as="a"
-								target="_blank"
-								href={link.url}
-								cursor="pointer"
-								px="6"
-							>
-								{link.title}
-							</Text>
-							<Text>
-								{(index == links.length - 1) ? null : "/"}
-							</Text>
-						</>
-					)}
-				</Box>
+				<Divider mb="8" width="80%"/>
+				<Text> Michael Henderson &copy; 2021</Text>
+			</Box>
+			<Box display="flex" justifyContent="center">
+				{links.map((link, index) =>
+					<>
+						<Text
+							key={index}
+							as="a"
+							target="_blank"
+							href={link.url}
+							cursor="pointer"
+							px="6"
+						>
+							{link.title}
+						</Text>
+						<Text>
+							{(index == links.length - 1) ? null : "/"}
+						</Text>
+					</>
+				)}
 			</Box>
 		</Box>
 	);

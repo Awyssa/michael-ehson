@@ -9,7 +9,6 @@ const Index = () =>
 
 export async function getStaticProps()
 {
-
 	const data = {
     name: "Michael Henderson",
     occupation: "Software Engineer",

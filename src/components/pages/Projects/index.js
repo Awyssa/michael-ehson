@@ -2,12 +2,11 @@
 import React from "react";
 import { Heading, Box, Text, Divider } from "@chakra-ui/react";
 import Image from "next/image";
-import github from "../../../../public/images/icons/github.svg";
-import linkIcon from "../../../../public/images/icons/link-icon.svg";
 import minesweeperImage from "../../../../public/images/projects/minesweeper.png";
 import jokeImage from "../../../../public/images/projects/joke-api.png";
 import festivalistImage from "../../../../public/images/projects/festivalist.png";
 import cornhubImage from "../../../../public/images/projects/cornhub.png";
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
 const ProjectsSection = () =>
 {
@@ -58,44 +57,44 @@ const ProjectsSection = () =>
 		}
 	];
 
-	return <>
+	return (
 		<Box
 			width="100%"
 			display="flex"
 			alignItems="center"
 			justifyContent="center"
-			px={12}
+			px="12"
+			pt="8"
 		>
 			<Box maxWidth="1200px">
-				<Heading pb={2}>Projects</Heading>
-				{projects.map((project, index) =>
-				{
-					return <Box key={index} >
-						<Heading pb={4} fontSize="24px">{project.title}</Heading>
+				<Heading pb="2">Projects</Heading>
+				{projects.map((project, index) =>(
+					<Box key={index} >
+						<Heading pb="4" fontSize="24px">{project.title}</Heading>
 						<Box display="flex" flexDirection={{base: "column", md: "row"}}>
 							<Box maxWidth="300px">
 								<Image height="300px" width="350px" src={project.image} alt={project.title} />
 							</Box>
 							<Box ml={{base: 0, md: 4}} pt={{base: 2, md: null}}>
 								{project.discription}
-								<Box mt={6} display="flex" >
+								<Box mt="6" display="flex" >
 									{project.url && <Box as="a" href={project.url} target="_blank" display="flex" alignItems="center">
-										<Image src={linkIcon} alt="Link icon" />
-										<Text pl={2}>Link to project</Text>
+										<AiOutlineLink size="30px"/>
+										<Text pl="2">Link to project</Text>
 									</Box>}
-									<Box pl={6} as="a" href={project.github} target="_blank" display="flex" alignItems="center">
-										<Image src={github} alt="Github Logo" />
-										<Text pl={2} >Github Link</Text>
+									<Box pl="6" as="a" href={project.github} target="_blank" display="flex" alignItems="center">
+										<AiFillGithub size="30px"/>
+										<Text pl="2" >Github Link</Text>
 									</Box>
 								</Box>
 							</Box>
 						</Box>
-						{index != projects.length - 1 ? <Divider my={10}/> : <Box pb={12} />}
-					</Box>;
-				})}
+						{index != projects.length - 1 ? <Divider my="10"/> : <Box pb="12" />}
+					</Box>
+				))}
 			</Box>
 		</Box>
-	</>;
+	);
 };
 
 export default ProjectsSection;

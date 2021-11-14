@@ -23,10 +23,4 @@ const Custom404 = () =>
 		</Box>
 	);
 };
-
 export default Custom404;
-
-export async function getStaticProps()
-{
-	return {props: {},};
-}
