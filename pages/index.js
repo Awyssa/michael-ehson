@@ -1,5 +1,5 @@
 import React from "react";
-import Homepage from "../src/components/Homepage";
+import Homepage from "../src/components/pages/Homepage";
 
 const Index = (props) =>
 {
@@ -10,7 +10,6 @@ const Index = (props) =>
 
 export async function getStaticProps()
 {
-
 	const data = {
     name: "Michael Henderson",
     occupation: "Software Engineer / Full Stack Developer",
