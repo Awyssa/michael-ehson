@@ -7,16 +7,11 @@ import { DarkMode } from "../../store/DarkMode";
 const Layout = ({ children }) =>
 {
 	const { darkMode } = useContext(DarkMode);
+
 	return (
-		<Box
-			minWidth="300px"
-			bg={darkMode ? "black" : ""}
-			color={darkMode ? "white" : ""}
-		>
+		<Box minWidth="300px" minHeight="100vh" bg={darkMode ? "black" : ""} color={darkMode ? "white" : ""}>
 			<Nav />
-			<Box minHeight="80vh">
-				{ children }
-			</Box>
+				{children}
 			<Footer />
 		</Box>
 	);

@@ -14,6 +14,7 @@ const Homepage = (props) =>
 			align="center"
 			px="4"
 			pt="8"
+			height="80vh"
 		>
 			<Image width="600" height="400" src={myPicture} alt="Michael Henderson" />
 			<Text>{name}</Text>

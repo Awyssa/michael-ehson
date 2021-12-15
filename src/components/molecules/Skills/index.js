@@ -1,46 +1,91 @@
 import React, { useContext } from "react";
 import { Heading, Box, Text, SimpleGrid } from "@chakra-ui/react";
-import Image from "next/image";
 import { DarkMode } from "../../store/DarkMode";
-import bookshelf from "../../../../public/images/skills/bookshelf.png";
-import django from "../../../../public/images/skills/django.png";
-import express from "../../../../public/images/skills/express.png";
-import javascript from "../../../../public/images/skills/javascript.png";
-import koa from "../../../../public/images/skills/Koa.png";
-import apollo from "../../../../public/images/skills/apollo.png";
-import graphQl from "../../../../public/images/skills/graphql.png";
-import mongodb from "../../../../public/images/skills/mongodb.png";
-import nextjs from "../../../../public/images/skills/nextjs.png";
-import nodejs from "../../../../public/images/skills/nodejs.png";
-import python from "../../../../public/images/skills/python.png";
-import rails from "../../../../public/images/skills/rails.png";
-import react from "../../../../public/images/skills/react.png";
-import ruby from "../../../../public/images/skills/ruby.png";
-import mySql from "../../../../public/images/skills/mySql.png";
-import postgreSql from "../../../../public/images/skills/postgreSql.svg";
-import djangoDark from "../../../../public/images/skills/django-dark.png";
+import { DiNodejs, DiReact, DiDjango, DiRuby } from "react-icons/di";
+import { GiWillowTree, GiBookshelf } from "react-icons/gi";
+import {
+	SiJavascript,
+	SiNextdotjs,
+	SiMysql,
+	SiPostgresql,
+	SiGraphql,
+	SiApollographql,
+	SiMongodb,
+	SiExpress,
+	SiRubyonrails,
+	SiPython
+} from "react-icons/si";
+
 
 const SkillsSection = () =>
 {
 	const { darkMode } = useContext(DarkMode);
-	const skills = [
-		{ name: "JavaScript", image: javascript, url: null },
-		{ name: "React.js", image: react, url: "https://reactjs.org/" },
-		{ name: "Next.js", image: nextjs, url: "https://nextjs.org/" },
-		{ name: "Node.js", image: nodejs, url: "https://nodejs.org/en/" },
-		{ name: "MySQL", image: mySql, url: "https://www.mysql.com/" },
-		{ name: "PostgreSql", image: postgreSql, url: "https://www.postgresql.org/" },
-		{ name: "GraphQl", image: graphQl, url: "https://graphql.org/" },
-		{ name: "Apollo", image: apollo, url: "https://www.apollographql.com/" },
-		{ name: "MongoDB", image: mongodb, url: "https://www.mongodb.com/" },
-		{ name: "Express", image: express, url: "https://expressjs.com/" },
-		{ name: "Koa", image: koa, url: "https://koajs.com/" },
-		{ name: "Bookshelf.js", image: bookshelf, url: "https://bookshelfjs.org/" },
-		{ name: "Python", image: python, url: "https://www.python.org/" },
-		{ name: "Django", image: darkMode ? djangoDark : django, url: "https://www.djangoproject.com/" },
-		{ name: "Ruby", image: ruby, url: "https://www.ruby-lang.org/en/" },
-		{ name: "Rails", image: rails, url: "https://rubyonrails.org/" },
-	];
+
+	const skills = [{
+		name: "JavaScript",
+		icon: <SiJavascript size="100%" />,
+		url: null
+	}, {
+		name: "React.js",
+		icon: <DiReact size="100%" />,
+		url: "https://reactjs.org/"
+	}, {
+		name: "Next.js",
+		icon: <SiNextdotjs size="100%" />,
+		url: "https://nextjs.org/"
+	}, {
+		name: "Node.js",
+		icon: <DiNodejs size="100%" />,
+		url: "https://nodejs.org/en/"
+	}, {
+		name: "MySQL",
+		icon: <SiMysql size="100%" />,
+		url: "https://www.mysql.com/"
+	}, {
+		name: "PostgreSql",
+		icon: <SiPostgresql size="100%" />,
+		url: "https://www.postgresql.org/"
+	}, {
+		name: "GraphQl",
+		icon: <SiGraphql size="100%" />,
+		url: "https://graphql.org/"
+	}, {
+		name: "Apollo",
+		icon: <SiApollographql size="100%" />,
+		url: "https://www.apollographql.com/"
+	}, {
+		name: "MongoDB",
+		icon: <SiMongodb size="100%" />,
+		url: "https://www.mongodb.com/"
+	}, {
+		name: "Express",
+		icon: <SiExpress size="100%" />,
+		url: "https://expressjs.com/"
+	}, {
+		name: "Koa",
+		icon: <GiWillowTree size="100%" />,
+		url: "https://koajs.com/"
+	}, {
+		name: "Bookshelf.js",
+		icon: <GiBookshelf size="100%" />,
+		url: "https://bookshelfjs.org/"
+	}, {
+		name: "Python",
+		icon: <SiPython size="100%" />,
+		url: "https://www.python.org/"
+	}, {
+		name: "Django",
+		icon: <DiDjango size="100%" />,
+		url: "https://www.djangoproject.com/"
+	}, {
+		name: "Ruby",
+		icon: <DiRuby size="100%" />,
+		url: "https://www.ruby-lang.org/en/"
+	}, {
+		name: "Rails",
+		icon: <SiRubyonrails size="100%" />,
+		url: "https://rubyonrails.org/"
+	}];
 
 	return (
 		<Box px="6">
@@ -53,13 +98,20 @@ const SkillsSection = () =>
 						href={skill.url}
 						target="_blank"
 						textAlign="center"
-						color={darkMode ? "white" : ""}
-						backgroundColor={darkMode ? "#403d49" : ""}
-						borderRadius="5px"
-						px="2"
+						display="flex"
+						flexDirection="column"
+						alignItems="center"
+						justifyContent="center"
+						_hover={{ mt: -6 }}
+						transition="200ms"
 					>
 						<Text fontWeight="500" pb="1">{skill.name}</Text>
-						<Image width="200" height="120" objectFit="contain" src={skill.image} alt=""/>
+						<Box
+							height="80px"
+							color={darkMode ? "#d9d9d9" : "#262626"}
+						>
+							{skill.icon}
+						</Box>
 					</Box>
 				)
 				)}

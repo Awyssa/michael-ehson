@@ -10,7 +10,7 @@ const Custom404 = () =>
 				Woah there! You aren't supposed to be here!
 			</Text>
 			<Text py={2} as="h1" fontSize={18}>
-			But since you are... You may as well dance with pumkin guy!
+			But since you are... You may as well dance with pumpkin guy!
 			</Text>
 			<Box my={4}>
 				<Image w="400px" h="350px" src="https://i.giphy.com/media/l3vRfhFD8hJCiP0uQ/giphy.webp" alt="pumkin dance" />

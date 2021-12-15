@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, keyframes } from "@chakra-ui/react";
 import Link from "next/link";
 import { DarkMode } from "../../store/DarkMode";
-import { BsLightbulb } from "react-icons/bs";
-import { MdOutlineNightlightRound } from "react-icons/md";
+import { BsFillSunFill, BsMoon } from "react-icons/bs";
 
 const Nav = () =>
 {
@@ -14,6 +13,13 @@ const Nav = () =>
 		{ title: "Projects", url: "/projects"},
 		{ title: "Contact", url: "/contact"}
 	];
+
+	const spin = keyframes`
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg)}
+`;
+
+	const spinAnimation = `${spin} infinite 2s linear`;
 
 	return (
 		<Box
@@ -33,7 +39,7 @@ const Nav = () =>
 			<Box>
 				<Link href="/">
 					<a>
-						<Text cursor="pointer" fontWeight="bold" >Michael Henderson</Text>
+						<Text cursor="pointer" fontWeight="bold">Michael Henderson</Text>
 					</a>
 				</Link>
 			</Box>
@@ -49,13 +55,15 @@ const Nav = () =>
 				)}
 				<Box
 					as="button"
-					pl={["0", "2"]}
+					ml={["0", "6"]}
 					onClick={()=> setDarkMode(!darkMode)}
+					_hover={{ animation: spinAnimation }}
+
 				>
 					{darkMode ?
-						<BsLightbulb />
+						<BsFillSunFill size="30px" />
 						:
-						<MdOutlineNightlightRound />}
+						<BsMoon size="30px" />}
 				</Box>
 			</Box>
 		</Box>

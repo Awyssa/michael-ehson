@@ -31,6 +31,7 @@ const Contact = () =>
 			display="flex"
 			px="12"
 			pt="8"
+			height="80vh"
 		>
 			<Box maxWidth="1200px">
 				<Heading pb="8">Contact</Heading>

@@ -28,7 +28,7 @@ const About = () =>
 						<Text py="1">I then fell into Sales and Marketing, but pursued my passion and swapped careers in 2020. Glad to say it was the best decision of my life!</Text>
 						<Text py="1">I am focusing on React, Node.js, and Next.js. Also learning Python, Django, and GraphQL.</Text>
 						<Text pt="4px">
-							I also follow the works of Alan Kay, Paul Graham <a style={{ color: "blue" }} href="http://www.paulgraham.com/articles.html" target="_blank" rel="noreferrer">(http://www.paulgraham.com/articles.html)</a>, Oz Nova <a style={{ color: "blue" }} href="https://ozwrites.com" target="_blank" rel="noreferrer">(https://ozwrites.com/)</a>, and the Soft Skills Engineering Podcast <a style={{ color: "blue" }} href="https://softskills.audio/" target="_blank" rel="noreferrer">(https://softskills.audio/)</a>.
+							I also follow the works of Alan Kay, Paul Graham <a style={{ color: "#0070FF" }} href="http://www.paulgraham.com/articles.html" target="_blank" rel="noreferrer">(http://www.paulgraham.com/articles.html)</a>, Oz Nova <a style={{ color: "#0070FF" }} href="https://ozwrites.com" target="_blank" rel="noreferrer">(https://ozwrites.com)</a>, and the Soft Skills Engineering Podcast <a style={{ color: "#0070FF" }} href="https://softskills.audio/" target="_blank" rel="noreferrer">(https://softskills.audio)</a>.
 						</Text>
 					</Box>
 				</Box>
