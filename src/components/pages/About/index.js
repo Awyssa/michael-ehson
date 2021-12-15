@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, Heading, Divider } from "@chakra-ui/react";
+import { Box, Text, Divider } from "@chakra-ui/react";
 import SkillsSection from "../../molecules/Skills";
 import myPicture from "../../../../public/images/pictures/2.png";
 import Image from "next/image";
