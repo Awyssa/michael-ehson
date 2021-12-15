@@ -90,7 +90,7 @@ const SkillsSection = () =>
 	return (
 		<Box px="6">
 			<Heading my="8">My Skills</Heading>
-			<SimpleGrid columns={{base: 2, md: 4}} spacing="10">
+			<SimpleGrid columns={{base: 2, sm: 4}} spacing="10">
 				{skills.map((skill, index) => (
 					<Box
 						key={index}

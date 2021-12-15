@@ -28,15 +28,6 @@ const MyApp = ({ Component, pageProps }) =>
 				<meta property="og:image:alt" content="Michael Henderson" />
 				<meta property="og:image:width" content="1500" />
 				<meta property="og:image:height" content="1000" />
-				{"<!-- Global site tag (gtag.js) - Google Analytics -->"}
-				<script async src="https://www.googletagmanager.com/gtag/js?id=G-K432G96J0M"></script>
-				<script>
-					{`window.dataLayer = window.dataLayer || [];
-					function gtag(){dataLayer.push(arguments);}
-					gtag('js', new Date());
-
-					gtag('config', 'G-K432G96J0M');`}
-				</script>
 			</Head>
 			<ChakraProvider>
 				<DarkMode.Provider value={{darkMode, setDarkMode}}>

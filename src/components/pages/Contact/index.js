@@ -43,7 +43,10 @@ const Contact = () =>
 						href={contact.url}
 						display="flex"
 						alignItems="center"
+						my="3"
 						py="3"
+						_hover={{ ml: 4 }}
+						transition="200ms"
 					>
 						{contact.icon}
 						<Text

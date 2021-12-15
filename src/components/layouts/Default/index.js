@@ -11,7 +11,7 @@ const Layout = ({ children }) =>
 	return (
 		<Box minWidth="300px" minHeight="100vh" bg={darkMode ? "black" : ""} color={darkMode ? "white" : ""}>
 			<Nav />
-				{children}
+			{children}
 			<Footer />
 		</Box>
 	);

@@ -14,7 +14,7 @@ const ProjectsSection = () =>
 		{
 			title: "Minesweeper",
 			image: minesweeperImage,
-			discription: <>
+			description: <>
 				<Text>First project at General Assembly.</Text>
 				<Text>Minesweeper, but you have to sweep Covid cells</Text>
 				<Text>Solo project, built over one week using HTML, CSS and Vanilla Javascript.</Text>
@@ -25,7 +25,7 @@ const ProjectsSection = () =>
 		{
 			title: "Get a joke",
 			image: jokeImage,
-			discription: <>
+			description: <>
 				<Text>Second project at General Assembly.</Text>
 				<Text>An app to get all the best jokes on the internet.</Text>
 				<Text>Pair project, build over 2 days using React</Text>
@@ -36,7 +36,7 @@ const ProjectsSection = () =>
 		{
 			title: "Festivalist",
 			image: festivalistImage,
-			discription: <>
+			description: <>
 				<Text>Third project at General Assembly.</Text>
 				<Text>An app to research festivals, save to your personal page, and see what festivals your friends are attending.</Text>
 				<Text>Group project of four people, built over one week using React, NodeJS, Express, and MongoDB.</Text>
@@ -47,7 +47,7 @@ const ProjectsSection = () =>
 		{
 			title: "CornHub",
 			image: cornhubImage,
-			discription: <>
+			description: <>
 				<Text>Fouth and final project at General Assembly.</Text>
 				<Text>An app for farmers to research plants and crops. Can also set watering and fertilising reminders.</Text>
 				<Text>Group project of three people, built over one week using React, Python, and Django.</Text>
@@ -76,13 +76,13 @@ const ProjectsSection = () =>
 								<Image height="300px" width="350px" src={project.image} alt={project.title} />
 							</Box>
 							<Box ml={{base: 0, md: 4}} pt={{base: 2, md: null}}>
-								{project.discription}
+								{project.description}
 								<Box mt="6" display="flex" >
-									{project.url && <Box as="a" href={project.url} target="_blank" display="flex" alignItems="center">
+									<Box as="a" href={project.url} target="_blank" display="flex" alignItems="center" _hover={{ mt: -4 }} transition="200ms">
 										<AiOutlineLink size="30px"/>
 										<Text pl="2">Link to project</Text>
-									</Box>}
-									<Box pl="6" as="a" href={project.github} target="_blank" display="flex" alignItems="center">
+									</Box>
+									<Box pl="6" as="a" href={project.github} target="_blank" display="flex" alignItems="center" _hover={{ mt: -4 }} transition="200ms">
 										<AiFillGithub size="30px"/>
 										<Text pl="2" >Github Link</Text>
 									</Box>
