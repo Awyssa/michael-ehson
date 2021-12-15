@@ -31,6 +31,8 @@ const Footer = () =>
 							href={link.url}
 							cursor="pointer"
 							px="6"
+							_hover={{ mt: -1 }}
+							transition="200ms"
 						>
 							{link.title}
 						</Text>
