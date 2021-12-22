@@ -36,7 +36,7 @@ const About = () =>
 							My earliest experience with computers was using floppy disks to play Gorillas on my Father's MS-DOS-5. I then started coding by trying to mod "Command & Conquer: Tiberian Sun - Firestorm". This was when S Club 7 was popular, and the Nokia 3310 had just been released.
 						</Text>
 						<Text py="1">
-							After almost a year of trial and error, and many tears, I succeeded in my quest. The utter sense of accomplishment and joy I experienced has led me to become fascinated with computing and coding ever since.
+							After almost a year of trial and error, and many tears, I finally hacked the game, and succeeded in my quest. The utter sense of accomplishment and joy I experienced has led me to become fascinated with computing and coding ever since.
 						</Text>
 						<Text py="1">
 							My career differed from my passion, as I fell into Sales and Marketing. But with a growing disinterest over the years, I finally pursued my true calling and became a developer in 2019. Glad to say, it was the best decision of my life!
@@ -48,8 +48,8 @@ const About = () =>
 							I also follow
 							<Link href="http://www.paulgraham.com/articles.html" text=" Paul Graham" />,
 							<Link href="https://ozwrites.com" text=" Oz Nova" />, the
-							<Link href="https://softskills.audio/" text=" Soft Skills Engineering Podcast" />, and going through
-							<Link href="https://cs50.harvard.edu" text=" CS50" /> too.
+							<Link href="https://softskills.audio/" text=" Soft Skills Engineering Podcast" />,
+							and going through <Link href="https://cs50.harvard.edu" text=" CS50" /> too.
 						</Text>
 					</Box>
 				</Box>
