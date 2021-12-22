@@ -16,7 +16,7 @@ const ProjectsSection = () =>
 			image: minesweeperImage,
 			description: <>
 				<Text>First project at General Assembly.</Text>
-				<Text>Minesweeper, but you have to sweep Covid cells</Text>
+				<Text>Minesweeper, but you have to sweep Covid cells.</Text>
 				<Text>Solo project, built over one week using HTML, CSS and Vanilla Javascript.</Text>
 			</>,
 			github: "https://github.com/Awyssa/SEI-Project-1",
@@ -28,7 +28,7 @@ const ProjectsSection = () =>
 			description: <>
 				<Text>Second project at General Assembly.</Text>
 				<Text>An app to get all the best jokes on the internet.</Text>
-				<Text>Pair project, build over 2 days using React</Text>
+				<Text>Pair project, build over 2 days using React.</Text>
 			</>,
 			github: "https://github.com/Awyssa/SEI-Project-2",
 			url: "https://joke-api.netlify.app/"
@@ -48,7 +48,7 @@ const ProjectsSection = () =>
 			title: "CornHub",
 			image: cornhubImage,
 			description: <>
-				<Text>Fouth and final project at General Assembly.</Text>
+				<Text>Fourth and final project at General Assembly.</Text>
 				<Text>An app for farmers to research plants and crops. Can also set watering and fertilising reminders.</Text>
 				<Text>Group project of three people, built over one week using React, Python, and Django.</Text>
 			</>,
@@ -63,7 +63,7 @@ const ProjectsSection = () =>
 			display="flex"
 			alignItems="center"
 			justifyContent="center"
-			px="12"
+			px={{ base: "4", sm: "12"}}
 			pt="8"
 		>
 			<Box maxWidth="1200px">

@@ -21,14 +21,14 @@ const About = () =>
 			alignItems="center"
 			justifyContent="center"
 			pt="8"
-			px="12"
+			px={{ base: "4", sm: "12"}}
 		>
 			<Box maxWidth="1200px">
 				<Box display="flex" flexDirection={{base: "column", md: "row"}}>
 					<Box minWidth="300" minHeight="300" display="flex" justifyContent="center">
 						<Image pt="2" width="300" height="300" objectFit="contain" src={myPicture} alt="Michael Henderson" />
 					</Box>
-					<Box px="8">
+					<Box px={{ base: "2", sm: "8"}}>
 						<Box py="2" as="h1" fontSize="36px" fontWeight="600"> About Me </Box>
 						<Text py="1" fontWeight="700"> Hi, I'm Michael Henderson! </Text>
 						<Text py="1"> I am a Software Engineer / Full Stack Developer based in London, UK. </Text>

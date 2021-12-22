@@ -29,7 +29,7 @@ const Contact = () =>
 		<Box
 			width="100%"
 			display="flex"
-			px="12"
+			px={{ base: "4", sm: "12"}}
 			pt="8"
 			height="80vh"
 		>

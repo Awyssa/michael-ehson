@@ -6,7 +6,7 @@ import { DarkMode } from "../src/components/store/DarkMode";
 
 const MyApp = ({ Component, pageProps }) =>
 {
-	const [darkMode, setDarkMode] = useState(false);
+	const [darkMode, setDarkMode] = useState(true);
 
 	return (
 		<>
