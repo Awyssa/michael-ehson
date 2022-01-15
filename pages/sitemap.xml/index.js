@@ -3,16 +3,18 @@ import moment from "moment";
 const Sitemap = () =>
 {};
 
-export const getServerSideProps = async({ res }) =>
+export const getServerSideProps = async({ req, res }) =>
 {
 	const XML_OPEN_TAG = "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">";
 	const XML_CLOSE_TAG = "</urlset>";
 
+	const URL_BASEPATH = req.headers.host;
+
 	const URLS = [
-		"https://www.m-henderson.com",
-		"https://www.m-henderson.com/about",
-		"https://www.m-henderson.com/projects",
-		"https://www.m-henderson.com/contact"
+		URL_BASEPATH,
+		URL_BASEPATH + "/about",
+		URL_BASEPATH + "/projects",
+		URL_BASEPATH + "contact"
 	];
 
 	const SITEMAP_URLS = URLS.map(url =>

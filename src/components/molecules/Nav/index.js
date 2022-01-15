@@ -71,15 +71,16 @@ const Nav = () =>
 					</Box>
 				</Link>
 				<Box display="flex" alignItems="center" justifyContent="center">
-					{links.map((link, index) => <>
-						<Link key={index} href={link.url}>
-							<a>
-								<Text cursor="pointer" px={2} 						_hover={{ mt: -2 }}
-									transition="100ms">{link.title} </Text>
-							</a>
-						</Link>
-						{index == links.length - 1 ? null : <Text> / </Text>}
-					</>
+					{links.map((link, index) =>
+						<Box key={index} d="flex">
+							<Link href={link.url}>
+								<a>
+									<Text cursor="pointer" px={2} 						_hover={{ mt: -2 }}
+										transition="100ms">{link.title} </Text>
+								</a>
+							</Link>
+							{index == links.length - 1 ? null : <Text> / </Text>}
+						</Box>
 					)}
 				</Box>
 			</Box>

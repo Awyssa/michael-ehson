@@ -1,23 +1,6 @@
 import React from "react";
 import Homepage from "../src/components/pages/Homepage";
 
-const Index = (props) =>
-{
-	return (
-		<Homepage {...props} />
-	);
-};
-
-export async function getStaticProps()
-{
-	const data = {
-    name: "Michael Henderson",
-    occupation: "Software Engineer / Full Stack Developer",
-    age: "old",
-		location: "London, UK"
-	};
-
-	return { props: data };
-}
+const Index = (props) => <Homepage {...props} />;
 
 export default Index;

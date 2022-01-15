@@ -23,9 +23,8 @@ const Footer = () =>
 			</Box>
 			<Box display="flex" justifyContent="center">
 				{links.map((link, index) =>
-					<>
+					<Box key={index} display="flex">
 						<Text
-							key={index}
 							as="a"
 							target="_blank"
 							href={link.url}
@@ -39,7 +38,7 @@ const Footer = () =>
 						<Text>
 							{(index == links.length - 1) ? null : "/"}
 						</Text>
-					</>
+					</Box>
 				)}
 			</Box>
 		</Box>
