@@ -88,8 +88,8 @@ const Nav = () =>
 				as="button"
 				ml={["0", "6"]}
 				onClick={()=> setDarkMode(!darkMode)}
-				_hover={{ animation: spinAnimation }}
-
+				transition="transform .8s ease-in-out"
+				_hover={{ transform: "rotate(360deg)" }}
 			>
 				{darkMode ?
 					<BsFillSunFill size="30px" />
