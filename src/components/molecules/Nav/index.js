@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import { Box, Text, keyframes, Spinner } from "@chakra-ui/react";
+import { Box, Text, Spinner } from "@chakra-ui/react";
 import Link from "next/link";
 import { DarkMode } from "../../store/DarkMode";
 import { BsFillSunFill, BsMoon } from "react-icons/bs";
@@ -32,13 +32,6 @@ const Nav = () =>
 	{
 		setUpdateClock();
 	}, [updateClock]);
-
-	const spin = keyframes`
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg)}
-`;
-
-	const spinAnimation = `${spin} infinite 2s linear`;
 
 	return (
 		<Box
