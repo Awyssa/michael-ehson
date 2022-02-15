@@ -68,8 +68,14 @@ const Nav = () =>
 						<Box key={index} d="flex">
 							<Link href={link.url}>
 								<a>
-									<Text cursor="pointer" px={2} 						_hover={{ mt: -2 }}
-										transition="100ms">{link.title} </Text>
+									<Text
+										cursor="pointer"
+										px={2}
+										_hover={{ mt: -1 }}
+										transition="100ms ease-in-out"
+									>
+										{link.title}
+									</Text>
 								</a>
 							</Link>
 							{index == links.length - 1 ? null : <Text> / </Text>}

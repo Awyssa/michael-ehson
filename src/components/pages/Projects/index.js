@@ -6,6 +6,7 @@ import minesweeperImage from "../../../../public/images/projects/minesweeper.png
 import jokeImage from "../../../../public/images/projects/joke-api.png";
 import festivalistImage from "../../../../public/images/projects/festivalist.png";
 import cornhubImage from "../../../../public/images/projects/cornhub.png";
+import sachinAndPeggy from "../../../../public/images/projects/sachnpeggy.png";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
 const ProjectsSection = () =>
@@ -54,6 +55,16 @@ const ProjectsSection = () =>
 			</>,
 			github: "https://github.com/Awyssa/CornHub/tree/master",
 			url: "https://cornhubapp.herokuapp.com/"
+		},
+		{
+			title: "Sach & Peggy's Lonely Hearts",
+			image: sachinAndPeggy,
+			description: <>
+				<Text>Landing page website for The Sach & Peggy's Lonely Hearts podcast.</Text>
+				<Text>React, Chakra-UI, Next.js, and Node.js project.</Text>
+				<Text>Deployed on Vercel, also uses Mongo Database and Nodemailer.</Text>
+			</>,
+			url: "https://www.sachandpeggy.com/"
 		}
 	];
 
@@ -78,14 +89,15 @@ const ProjectsSection = () =>
 							<Box ml={{base: 0, md: 4}} pt={{base: 2, md: null}}>
 								{project.description}
 								<Box mt="6" display="flex" >
-									<Box as="a" href={project.url} target="_blank" display="flex" alignItems="center" _hover={{ mt: -4 }} transition="200ms">
+									<Box as="a" href={project.url} target="_blank" display="flex" alignItems="center" _hover={{ mt: -4 }}										transition="200ms ease-in-out">
 										<AiOutlineLink size="30px"/>
-										<Text pl="2">Link to project</Text>
+										<Text pl="2">Link to deployment</Text>
 									</Box>
-									<Box pl="6" as="a" href={project.github} target="_blank" display="flex" alignItems="center" _hover={{ mt: -4 }} transition="200ms">
+									{project.github ? <Box pl="6" as="a" href={project.github} target="_blank" display="flex" alignItems="center" _hover={{ mt: -4 }} 										transition="200ms ease-in-out">
 										<AiFillGithub size="30px"/>
-										<Text pl="2" >Github Link</Text>
+										<Text pl="2" >Github URL</Text>
 									</Box>
+										: null}
 								</Box>
 							</Box>
 						</Box>

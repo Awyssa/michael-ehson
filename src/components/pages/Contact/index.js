@@ -46,7 +46,8 @@ const Contact = () =>
 						my="3"
 						py="3"
 						_hover={{ ml: 4 }}
-						transition="200ms"
+						transition="200ms ease-in-out"
+						width="100%"
 					>
 						{contact.icon}
 						<Text

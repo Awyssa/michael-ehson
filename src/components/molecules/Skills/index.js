@@ -103,7 +103,7 @@ const SkillsSection = () =>
 						alignItems="center"
 						justifyContent="center"
 						_hover={{ mt: -6 }}
-						transition="200ms"
+						transition="200ms ease-in-out"
 					>
 						<Text fontWeight="500" pb="1">{skill.name}</Text>
 						<Box

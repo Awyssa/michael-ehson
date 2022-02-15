@@ -31,7 +31,7 @@ const Footer = () =>
 							cursor="pointer"
 							px="6"
 							_hover={{ mt: -1 }}
-							transition="200ms"
+							transition="200ms ease-in-out"
 						>
 							{link.title}
 						</Text>
