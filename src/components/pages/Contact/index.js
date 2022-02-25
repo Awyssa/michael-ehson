@@ -23,6 +23,11 @@ const Contact = () =>
 			url: "https://www.github.com/Awyssa",
 			icon: <AiFillGithub size="30px" />
 		},
+		{
+			method: "medium",
+			text: "medium link",
+			url: "https://www.medium.com",
+		},
 	];
 
 	return (
